@@ -118,10 +118,26 @@ nav {
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    color: #ffffff;
+    /* Bright white for better contrast */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    /* Shadow for readability on images */
 }
 
 .nav-links a:hover,
 .nav-links a.active {
+    color: var(--secondary);
+    /* Ochre for active state */
+}
+
+header.scrolled .nav-links a {
+    color: var(--text-color);
+    /* Dark text on white scrolled header */
+    text-shadow: none;
+}
+
+header.scrolled .nav-links a:hover,
+header.scrolled .nav-links a.active {
     color: var(--primary);
 }
 
