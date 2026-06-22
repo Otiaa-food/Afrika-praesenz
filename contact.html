@@ -73,8 +73,22 @@
                 </div>
 
                 <div class="contact-form glass" style="padding: 3rem; border-radius: 20px;">
-                    <form>
-                    <form class="contact-form" action="https://formspree.io/f/mlggwajp" method="POST">
+                    <form
+  action="https://formspree.io/f/mlggwajp"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+                    <!--<form class="contact-form" action="https://formspree.io/f/mlggwajp" method="POST">
                         <div class="form-group" style="margin-bottom: 1.5rem;">
                             <label for="name">Name</label>
                             <input type="text" id="name" placeholder="Ihr Name"
@@ -91,7 +105,7 @@
                                 style="width: 100%; padding: 1rem; border-radius: 10px; border: 1px solid #ddd; margin-top: 0.5rem;"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary" style="width: 100%;">Nachricht senden</button>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </section>
